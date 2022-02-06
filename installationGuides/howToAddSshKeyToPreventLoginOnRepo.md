@@ -4,21 +4,27 @@ This is a guide for adding ssh key to prevent login username and password authen
 Username and password option is not available due to https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/
 
 Use console directly or git bash (in case of windows)
+This command will create a new SSH key, using the provided email as label:
 
 ```
-1) $ssh-keygen -t ed25519 -C "yourEmail@example.com"
+$ssh-keygen -t ed25519 -C "yourEmail@example.com"
 ```
 
-This command will create a new SSH key, using the provided email as label
+To ensure ssh-agent i running on background run this command:
 
 ```
-2) $ssh-add ~/.ssh/id_ed25519
+$eval "$(ssh-agent -s)"
 
 ```
-This command will add your private key to ssh-agent, if you have a differente name replace id_ed25519 with the name of your private key
+This command will add your private key to ssh-agent, if you have a differente name replace id_ed25519 with the name of your private key:
 
 ```
-3) Add your key to your setting access configuration relate to ssh
+$ssh-add ~/.ssh/id_ed25519
+
+```
+
+```
+4) Add your key to your setting access configuration relate to ssh
 ```
 
 https://github.com/settings/keys
@@ -29,11 +35,13 @@ path = ~/.ssh
 
 Here you will find your key: id_ed25519
 
+Run this command to output in the console the key:
+
 ```
 $cat id_ed25519
 ```
 
-paste the output into the form of GitHub.
+copy andd paste the output into the form of GitHub.
 
 From now on, when you clone the a repo with ssh key option, you are able to log without credentials thanks to ssh key previous configurated.
 

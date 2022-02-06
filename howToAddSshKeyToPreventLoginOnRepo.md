@@ -5,15 +5,21 @@ Username and password option is not available due to https://github.blog/2020-12
 
 Use console directly or git bash (in case of windows)
 
+```
 1) $ssh-keygen -t ed25519 -C "yourEmail@example.com"
+```
 
 This command will create a new SSH key, using the provided email as label
 
+```
 2) $ssh-add ~/.ssh/id_ed25519
 
+```
 This command will add your private key to ssh-agent, if you have a differente name replace id_ed25519 with the name of your private key
 
+```
 3) Add your key to your setting access configuration relate to ssh
+```
 
 https://github.com/settings/keys
 
@@ -23,7 +29,9 @@ path = ~/.ssh
 
 Here you will find your key: id_ed25519
 
+```
 $cat id_ed25519
+```
 
 paste the output into the form of GitHub.
 

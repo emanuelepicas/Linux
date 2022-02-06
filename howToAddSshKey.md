@@ -1,4 +1,4 @@
-#Add Ssh key to your remote console linux or gitBash for windows case
+# Add Ssh key to your remote console linux or gitBash for windows case
 
 This is a guide for adding ssh key to prevent login username and password authentication.
 Username and password option is not available due to https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/

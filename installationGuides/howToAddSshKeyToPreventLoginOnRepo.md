@@ -23,17 +23,20 @@ $ssh-add ~/.ssh/id_ed25519
 
 ```
 
-```
-4) Add your key to your setting access configuration relate to ssh
-```
 
-https://github.com/settings/keys
+Add your key to your setting access configuration relate to ssh, you can go into the section through this link:https://github.com/settings/keys
 
-add the key clicking on the button "New SSH key", here you will paste the key that you can find in this path, if you created the ssh key in a default way.
+Add the key clicking on the button "New SSH key". 
 
+Here you will paste the key that you can find in this path, if you created the ssh key in a default way 
 path = ~/.ssh
 
-Here you will find your key: id_ed25519
+Run this command to list the files inside the folder:
+
+```
+$ ls
+id_ed25519  id_ed25519.pub
+```
 
 Run this command to output in the console the key:
 
@@ -41,7 +44,7 @@ Run this command to output in the console the key:
 $cat id_ed25519
 ```
 
-copy andd paste the output into the form of GitHub.
+Copy andd paste the output into the form of the GitHub setting keys page.
 
 From now on, when you clone the a repo with ssh key option, you are able to log without credentials thanks to ssh key previous configurated.
 

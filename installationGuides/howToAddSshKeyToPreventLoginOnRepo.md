@@ -41,12 +41,28 @@ id_ed25519  id_ed25519.pub
 Run this command to output in the console the key:
 
 ```
-$cat id_ed25519
+$cat id_ed25519.pub
+
 ```
 
-Copy andd paste the output into the form of the GitHub setting keys page.
+```
 
-From now on, when you clone the a repo with ssh key option, you are able to log without credentials thanks to ssh key previous configurated.
+To ensure ssh-agent i running on background run this command:
 
+```
+$eval "$(ssh-agent -s)"
+
+```
+This command will add your private key to ssh-agent, if you have a differente name replace id_ed25519 with the name of your private key:
+
+```
+$ssh-add ~/.ssh/id_ed25519
+
+```
+
+Copy and paste the output into the form of the GitHub setting keys page.
+
+From now on, when you clone the a repo with ssh key option, you are able to log without credentials thanks to ssh key previous configurated. You have to select git clone -> SSH and run the command:
+$ git clone git@github.com:....
 
 

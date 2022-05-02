@@ -63,6 +63,9 @@ $ssh-add ~/.ssh/id_ed25519
 Copy and paste the output into the form of the GitHub setting keys page.
 
 From now on, when you clone the a repo with ssh key option, you are able to log without credentials thanks to ssh key previous configurated. You have to select git clone -> SSH and run the command:
+
+```
+
 $ git clone git@github.com:....
 
 

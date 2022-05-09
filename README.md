@@ -1,3 +1,2 @@
-# Linux
-Repository about some pratice that I'm doing on various distribuitions of Linux regarding script and some little automations.
-There is also some installation guides such as SSH key installation for Git and more.
+Repository about some practice that I'm doing on various distributions of Linux regarding script and some little automations.
+There are also some installation guides such as SSH key installation for Git and more.

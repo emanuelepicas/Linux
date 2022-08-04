@@ -1,0 +1,11 @@
+#!/bin/bash
+
+echo This is the backcount
+for ((i=2;i>-1;i--))
+do
+        for ((j=59;j>-1;j--))
+        do
+                echo "minute: "$i " second: " $j
+                sleep 1
+        done
+done

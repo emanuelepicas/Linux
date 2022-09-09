@@ -1,5 +1,5 @@
 #!/bin/bash
-echo "Insert a number from 1 to 12, this program will output the corrisponding month: "
+echo -e "\e[1;32mInsert a number from 1 to 12, this program will output the corrisponding month: "
 read value
 case $value in
 
